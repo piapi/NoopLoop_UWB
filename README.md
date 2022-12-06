@@ -1,3 +1,6 @@
+基于空循环的UWB的驱动做了一些修改，这里近修改了LP0模式。将imu的信息和uwb的位置以及速度信息，以及和各个基站的距离进行发布。将uwb的距离信息放在了nav_msgs::Odometry消息中的pose.covariance的前8个之中。
+
+
 
 简体中文 | [English](./README.en.md) 
 
@@ -88,7 +91,7 @@
 参数
    - **`port_name`** 设备串行端口名称，默认值: `/dev/ttyUSB0`.
    - **`baud_rate`** 设备波特率，默认值: `921600`.
-  
+
 如需要RVIZ显示可执行消息转换器
 
     roslaunch nlink_parser linktrack_rviz.launch
@@ -124,7 +127,7 @@
 参数
    - **`port_name`** 设备串行端口名称，默认值: `/dev/ttyUSB0`.
    - **`baud_rate`** 设备波特率，默认值: `921600`.
-  
+
 订阅的话题
 
 * **`/nlink_linktrack_data_transmission`** ([std_msgs::String])
