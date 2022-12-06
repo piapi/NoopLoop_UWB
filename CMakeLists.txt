@@ -122,6 +122,10 @@ target_link_libraries(${LINKTRACK_NAME}
     )
 add_dependencies(${LINKTRACK_NAME} ${PROJECT_NAME}_generate_messages_cpp)
 
+
+add_executable(uwbOdometry src/linktrack/uwbOdometry.cpp)
+target_link_libraries(uwbOdometry ${catkin_LIBRARIES})
+
 set(LINKTRACK_RVIZ_NAME "linktrack_rviz_converter")
 add_executable(${LINKTRACK_RVIZ_NAME}
     src/linktrack/main_rviz_converter.cpp

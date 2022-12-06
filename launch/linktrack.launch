@@ -3,4 +3,6 @@
         <param name="port_name" value="/dev/ttyUSB0" />
         <param name="baud_rate" value="921600" />
     </node>
+    <node pkg="nlink_parser" type="uwbOdometry"     name="uwbOdometry"    output="screen"  respawn="true"/>
+
 </launch>
