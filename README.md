@@ -1,4 +1,6 @@
-基于空循环的UWB的驱动做了一些修改，这里近修改了LP0模式。将imu的信息和uwb的位置以及速度信息，以及和各个基站的距离进行发布。将uwb的距离信息放在了nav_msgs::Odometry消息中的pose.covariance的前8个之中。
+参考：https://github.com/nooploop-dev/nlink_parser
+
+基于空循环的UWB的驱动做了一些修改，这里仅修改了LP0模式。将imu的信息和uwb的位置以及速度信息，以及和各个基站的距离进行发布。将uwb的距离信息放在了nav_msgs::Odometry消息中的pose.covariance的前8个之中。
 
 
 
